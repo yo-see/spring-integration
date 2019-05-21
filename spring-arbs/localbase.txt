@@ -1,0 +1,14 @@
+JAVA_HOME 설정 :
+
+add library in JDK : 
+	JAVA_HOME/lib/ojdbc7.jar 파일 복사 필요 (/webapp/WEB-INF/lib 디렉토리에 파일 있음)
+
+DB : 
+	Oracle12c
+	테이블스페이스 : BATCH_MONITORING
+	DB username : monitoring
+	DB password : monitoring
+	
+
+
+	

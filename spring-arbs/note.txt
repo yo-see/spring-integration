@@ -1,0 +1,16 @@
+20190507 :
+	프로젝트 시작 (WEB + BATCH + INTEGRATION = 배치 모니터링 시스템)
+	오라클 연동 ojdbc7.jar 라이브러리 gradle 추가 compile files("${System.getenv('JAVA_HOME')}/lib/ojdbc7.jar")
+20190508 :
+	오라클 조회 테스트 완료 
+	lombok.jar 레파지토리에서 java -jar lombok.jar로 실행하여 IDE에 플러그인 설치함
+	배치 스키마 설치 (사무실 노트북)
+	배치 쿼리 권한 문제 ORA-01950 : 
+		(해결) alter user monitoring default tablespace batch_monitoring quota unlimited on batch_monitoring;
+	배치 트랜잭션 직렬화 권한 문제  ORA-08177
+	spring.profiles.active office와 home으로 나눔 : Run Configuration에서 gradle profile 변경해줄 것
+		
+		
+	
+	 
+	

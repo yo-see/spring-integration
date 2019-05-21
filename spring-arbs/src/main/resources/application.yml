@@ -1,0 +1,37 @@
+spring:
+   main:
+      allow-bean-definition-overriding: true
+   batch:
+      job:
+         enabled: false
+
+---
+
+spring:
+   profiles: office
+   datasource:
+      platform: oracle
+      url: jdbc:oracle:thin:@localhost:1521/ORCL
+      username: monitoring
+      password: monitoring
+      driver-class-name: oracle.jdbc.OracleDriver
+   mvc:
+      view:
+         prefix: /WEB-INF/templates/
+         suffix: .jsp
+
+--- 
+
+spring:
+   profiles: home
+   datasource:
+      platform: oracle
+      url: jdbc:oracle:thin:@192.168.1.6:1521/ORCL
+      username: monitoring
+      password: monitoring
+      driver-class-name: oracle.jdbc.OracleDriver
+   mvc:
+      view:
+         prefix: /WEB-INF/templates/
+         suffix: .jsp
+   
